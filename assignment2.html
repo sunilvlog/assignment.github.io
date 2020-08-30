@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html lan="en>
+<html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <title>module 2</title>
         <style>
             .container{
                 background-color: grey;
                 border: 1px solid black;
-                width: 370px;
-                height: 150px;
+                width: 400px;
+                height: 160px;
                 margin: 10px;
                 display: inline-block;
+                box-sizing: border-box;
                 
+            }
+            * {
+                box-sizing: border-box;
             }
 
             h1{
@@ -21,18 +28,22 @@
             #small{
                     background-color: pink;
                     border: 1px solid black;
-                    width: 100px;
-                    height: 20px;
-                    margin: 0px;
+                    width: 150px;
+                    height: 30px;
+                    margin-right: auto;
                     float: right;
                     text-align: center;
+                    position: relative;
+                    right: 0;
+                    top: auto;
+                    box-sizing: border-box;
             }
 
 
             #midium{
                     background-color: red;
-                    width: 100px;
-                    height:20px;
+                    width: 150px;
+                    height:30px;
                     border: 1px solid black;
                     margin: 0px;
                     float: right;
@@ -41,11 +52,17 @@
     
             }
 
+            @media screen and (min-width: 768px) and (max-width: 992px){
+                .container{
+                    width: 75%;
+                }
+            }
+
 
             #hard{
                     background-color: yellow;
-                    width: 100px;
-                    height: 20px;
+                    width: 150px;
+                    height: 30px;
                     border: 1px solid black;
                     margin: 0px;
                     float: right;
@@ -54,12 +71,16 @@
                 }
             p{
                 padding: 10px;  
+                box-sizing: border-box;
             }
+            
 
         </style>
         
     </head>
     <body>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <h1>our manu</h1>
         <div class="containers">
         <div class="container">
