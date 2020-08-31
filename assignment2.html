@@ -11,18 +11,21 @@
                 background-color: grey;
                 border: 1px solid black;
                 width: 400px;
-                height: 160px;
+                height: 170px;
                 margin: 10px;
                 display: inline-block;
-                box-sizing: border-box;
+                
                 
             }
             * {
                 box-sizing: border-box;
+                padding: 0px;
+                margin: 0px;
             }
 
             h1{
                 text-align: center;
+                
             }
 
             #small{
@@ -30,13 +33,11 @@
                     border: 1px solid black;
                     width: 150px;
                     height: 30px;
-                    margin-right: auto;
                     float: right;
                     text-align: center;
-                    position: relative;
+                    position: right;
                     right: 0;
-                    top: auto;
-                    box-sizing: border-box;
+                    top: 0;
             }
 
 
@@ -52,9 +53,27 @@
     
             }
 
-            @media (min-width: 768px) and (max-width: 992px){
-                #hard{
-                    width: 75%;
+            @media (min-width: 768px) and (max-width: 991px){
+                .container{
+                    width: 48%;
+                    float: left;
+                    margin: 10px 1%;
+	                padding: 7px 5px 5px 5px;
+                }
+
+            }
+            #container2{
+
+                width: 98%;
+            }
+
+            @media (max-width:767px){
+                .container{
+
+                    width: 98%;
+                    float: left;
+                    margin: 10px 1%;
+	                padding: 7px 5px 5px 5px;
                 }
             }
 
@@ -70,8 +89,8 @@
                     font: bold;
                 }
             p{
+                margin-top: 15px;
                 padding: 10px;  
-                box-sizing: border-box;
             }
             
 
@@ -82,27 +101,23 @@
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <h1>our manu</h1>
-        <div class="col-dv-4 col-tv-6 col-mv-12">
-            <div class="container">
-                <h4 id="small">Chicken</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto possimus ut nihil aut repudiandae illum illo nam atque recusandae quam. Maxime consequatur pariatur aut modi voluptatibus eum vel! Id, consequatur.</p>
 
-            </div>
-        </div>
-        <div class="col-dv-4 col-tv-6 col-mv-12">
-            <div class="container">
-                <h4 id="midium">Beef</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, rerum, aperiam iusto voluptates optio labore minima eos, incidunt eveniet nisi quisquam laboriosam dicta soluta pariatur? Ab, excepturi! Aspernatur, debitis dolore.</p>
+        <div class="container">
+            <h4 id="small">Chicken</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto possimus ut nihil aut repudiandae illum illo nam atque recusandae quam. Maxime consequatur pariatur aut modi voluptatibus eum vel! Id, consequatur.</p>
 
-            </div>
         </div>
-        <div class="col-dv-4 col-tv-6 col-mv-12">
-            <div class="container">
+        <div class="container">
+            <h4 id="midium">Beef</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, rerum, aperiam iusto voluptates optio labore minima eos, incidunt eveniet nisi quisquam laboriosam dicta soluta pariatur? Ab, excepturi! Aspernatur, debitis dolore.</p>
+
+        </div>
+        <div class="container">
+            <section id="container2">
+
                 <h4 id="hard">Sushi</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia, delectus maiores necessitatibus rem cum corrupti dolor natus facere magni, soluta quisquam unde sapiente ducimus officia quos iusto corporis. Natus.</p>
-
-            </div>
+            </section>
         </div>
-        
     </body>
 </html>
