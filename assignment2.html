@@ -2,25 +2,46 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width-device-width,intial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+
         <title>module 2</title>
         <style>
-            .container{
+            #container{
                 background-color: grey;
                 border: 1px solid black;
-                width: 400px;
-                height: 170px;
+                font-size: 15px;
+                float: left;
+                padding: 7px 5px 5px 5px;
+                width: 300px;
                 margin: 10px;
-                display: inline-block;
-                
-                
+                float: left;
+                position: relative;
             }
-            * {
-                box-sizing: border-box;
-                padding: 0px;
-                margin: 0px;
+
+            #container2{
+                background-color: grey;
+                border: 1px solid black;
+                font-size: 15px;
+                float: left;
+                padding: 7px 5px 5px 5px;
+                width: 300px;
+                margin: 10px;
+                float: left;
+                position: relative;
+            }
+
+            #container3{
+                background-color: grey;
+                border: 1px solid black;
+                font-size: 15px;
+                float: left;
+                padding: 7px 5px 5px 5px;
+                width: 300px;
+                margin: 10px;
+                float: left;
+                position: relative;
             }
 
             h1{
@@ -31,93 +52,105 @@
             #small{
                     background-color: pink;
                     border: 1px solid black;
-                    width: 150px;
-                    height: 30px;
+                    width: 35%;
                     float: right;
                     text-align: center;
-                    position: right;
                     right: 0;
                     top: 0;
+                    font-weight: bold;
+                    position: absolute;
             }
-
 
             #midium{
-                    background-color: red;
-                    width: 150px;
-                    height:30px;
+                    background-color: pink;
                     border: 1px solid black;
-                    margin: 0px;
+                    width: 35%;
                     float: right;
                     text-align: center;
+                    right: 0;
+                    top: 0;
+                    font-weight: bold;
+                    position: absolute;
                     color: white;
-    
             }
 
+            #hard{
+                    background-color: pink;
+                    border: 1px solid black;
+                    width: 35%;
+                    float: right;
+                    text-align: center;
+                    right: 0;
+                    top: 0;
+                    font-weight: bold;
+                    position: absolute;
+                    padding: 2px;
+            }
+
+            #p1{
+                margin-top: 15px;
+            }
+
+            #p2{
+                margin-top: 15px;
+            }
+
+            #p3{
+                margin-top: 15px;
+            }
+
+            @media (min-width: 992px){
+                #container , #container2 , #container3{
+
+                    width: 31.33%;
+                    float: left;
+                    margin: 10px 1%;
+                padding: 7px 5px 5px 5px;
+                }
+                
+            }
             @media (min-width: 768px) and (max-width: 991px){
-                .container{
+                #container , #container2 , #container3{
                     width: 48%;
                     float: left;
                     margin: 10px 1%;
-	                padding: 7px 5px 5px 5px;
+	            padding: 7px 5px 5px 5px;
+                }
+                #container3{
+                    width: 98%;
                 }
 
             }
-            #container2{
-
-                width: 98%;
-            }
 
             @media (max-width:767px){
-                .container{
+                #container , #container2 , #container3{
 
                     width: 98%;
                     float: left;
                     margin: 10px 1%;
-	                padding: 7px 5px 5px 5px;
+	            padding: 7px 5px 5px 5px;
                 }
             }
-
-
-            #hard{
-                    background-color: yellow;
-                    width: 150px;
-                    height: 30px;
-                    border: 1px solid black;
-                    margin: 0px;
-                    float: right;
-                    text-align: center;
-                    font: bold;
-                }
-            p{
-                margin-top: 15px;
-                padding: 10px;  
-            }
-            
 
         </style>
         
     </head>
     <body>
-        <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
         <h1>our manu</h1>
 
-        <div class="container">
-            <h4 id="small">Chicken</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto possimus ut nihil aut repudiandae illum illo nam atque recusandae quam. Maxime consequatur pariatur aut modi voluptatibus eum vel! Id, consequatur.</p>
+        <div id="container">
+            <div id="small">Chicken</div>
+            <div id="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto possimus ut nihil aut repudiandae illum illo nam atque recusandae quam. Maxime consequatur pariatur aut modi voluptatibus eum vel! Id, consequatur.</div>
 
         </div>
-        <div class="container">
-            <h4 id="midium">Beef</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, rerum, aperiam iusto voluptates optio labore minima eos, incidunt eveniet nisi quisquam laboriosam dicta soluta pariatur? Ab, excepturi! Aspernatur, debitis dolore.</p>
+        <div id="container2">
+            <div id="midium">Beef</div>
+            <div id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, rerum, aperiam iusto voluptates optio labore minima eos, incidunt eveniet nisi quisquam laboriosam dicta soluta pariatur? Ab, excepturi! Aspernatur, debitis dolore.</div>
 
         </div>
-        <div class="container">
-            <section id="container2">
-
-                <h4 id="hard">Sushi</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia, delectus maiores necessitatibus rem cum corrupti dolor natus facere magni, soluta quisquam unde sapiente ducimus officia quos iusto corporis. Natus.</p>
-            </section>
+        <div id="container3">
+            <div id="hard">Sushi</div>
+            <div id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia, delectus maiores necessitatibus rem cum corrupti dolor natus facere magni, soluta quisquam unde sapiente ducimus officia quos iusto corporis. Natus.</div>
         </div>
     </body>
 </html>
